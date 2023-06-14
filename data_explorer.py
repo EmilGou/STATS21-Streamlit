@@ -61,7 +61,6 @@ def main():
         selected_columns = st.sidebar.multiselect('Select columns', df_cols)
 
         if selected_columns:
-            st.dataframe(df[selected_columns])
             num_cols = df[selected_columns].select_dtypes(include=[np.number]).columns.tolist()
             if num_cols:
                 st.write(df[num_cols].describe().drop(['count', 'mean','std']).T)

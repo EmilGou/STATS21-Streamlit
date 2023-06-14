@@ -70,7 +70,7 @@ def main():
                     sns.histplot(df[col], bins=20, kde=True, color='skyblue', edgecolor='black', linewidth=1.0, ax=ax)
                     ax.set_xlabel(col + ' (thousands)', fontsize=12)
                     ax.set_ylabel('Frequency', fontsize=12)
-                    ax.set_title(f'Distribution of {col} (thousands)', fontsize=16)
+                    ax.set_title(f'Distribution of {col}', fontsize=16)
                     ax.grid(True)
 
                     # Rotate x-axis labels for better visibility
